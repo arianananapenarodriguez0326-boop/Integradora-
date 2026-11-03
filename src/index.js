@@ -36,6 +36,21 @@ function cargarEstudiantes() {
     }
 }
 
+// Leer las carreras desde el archivo JSON
+function cargarCarreras() {
+    try {
+        const rutaJSON = path.join(__dirname, '..', 'data', 'carreras.json');
+        const contenido = fs.readFileSync(rutaJSON, 'utf-8');
+
+        return JSON.parse(contenido);
+
+    } catch (error) {
+        console.log('Error al leer el archivo de carreras:', error.message);
+        return [];
+    }
+}
+
+
 // Ingreso del administrador
 async function ingresarAdministrador() {
     const password = await rl.question('Ingrese la contraseña maestra: ');

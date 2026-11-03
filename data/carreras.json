@@ -1,0 +1,24 @@
+[
+  {
+    "carrera": "Sistemas",
+    "director": "Director de Sistemas",
+    "edificio": "Edificio A",
+    "temasPermitidos": [
+      "Programación",
+      "Algoritmos",
+      "Bases de datos",
+      "Desarrollo de software"
+    ]
+  },
+  {
+    "carrera": "Matemáticas",
+    "director": "Director de Matemáticas",
+    "edificio": "Edificio B",
+    "temasPermitidos": [
+      "Álgebra",
+      "Cálculo",
+      "Geometría",
+      "Estadística"
+    ]
+  }
+]
